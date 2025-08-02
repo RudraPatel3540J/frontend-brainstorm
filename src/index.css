@@ -455,3 +455,505 @@ body {
         padding: 20px;
     }
 }
+
+/* ===== COMPREHENSIVE RESPONSIVE STYLES ===== */
+
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .header h1 {
+        font-size: 3.5rem;
+    }
+
+    .section h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Medium screens (768px to 1199px) */
+@media (max-width: 1199px) and (min-width: 769px) {
+    .container {
+        padding: 15px;
+    }
+
+    .header {
+        padding: 30px 15px;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .section {
+        padding: 25px;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Tablet screens (768px and below) */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .header {
+        padding: 25px 15px;
+        margin-bottom: 20px;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .nav {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav a {
+        padding: 12px 25px;
+        font-size: 0.95rem;
+        width: 100%;
+        text-align: center;
+        max-width: 300px;
+    }
+
+    .section {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .section h2 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    .question {
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    .question h3 {
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
+
+    .code-block {
+        padding: 15px;
+        font-size: 0.9rem;
+        overflow-x: auto;
+    }
+
+    .example {
+        padding: 15px;
+    }
+
+    .example::before {
+        font-size: 0.8rem;
+        padding: 3px 10px;
+    }
+
+    .tip {
+        padding: 12px;
+    }
+
+    .toggle-btn {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Table Responsive Styles */
+    .comparison-table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: 0 -15px 25px -15px;
+        padding: 0 15px;
+    }
+
+    .comparison-table {
+        min-width: 600px;
+        font-size: 0.9rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 10px 8px;
+        white-space: nowrap;
+    }
+
+    .comparison-table th {
+        font-size: 0.85rem;
+    }
+
+    .table-description {
+        font-size: 0.9rem;
+    }
+
+    /* Extra info responsive */
+    .extra-info {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+    }
+
+    .extra-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .extra-info h4 {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile screens (480px and below) */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header {
+        padding: 20px 10px;
+        border-radius: 15px;
+    }
+
+    .header h1 {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+
+    .header p {
+        font-size: 0.9rem;
+    }
+
+    .nav {
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    .nav a {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        border-radius: 20px;
+    }
+
+    .section {
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+
+    .section h2::after {
+        width: 40px;
+    }
+
+    .question {
+        padding: 12px;
+        border-radius: 8px;
+    }
+
+    .question h3 {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .code-block {
+        padding: 12px;
+        font-size: 0.8rem;
+        border-radius: 8px;
+    }
+
+    .code-block::before {
+        font-size: 1rem;
+        top: 8px;
+        right: 12px;
+    }
+
+    .example {
+        padding: 12px;
+        border-radius: 8px;
+    }
+
+    .example::before {
+        font-size: 0.75rem;
+        padding: 2px 8px;
+        left: 15px;
+    }
+
+    .tip {
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 0.9rem;
+    }
+
+    .highlight {
+        padding: 1px 6px;
+        font-size: 0.85rem;
+    }
+
+    .toggle-btn {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+        border-radius: 20px;
+    }
+
+    /* Mobile Table Styles */
+    .comparison-table-container {
+        margin: 0 -10px 20px -10px;
+        padding: 0 10px;
+    }
+
+    .comparison-table {
+        min-width: 500px;
+        font-size: 0.8rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 8px 6px;
+        font-size: 0.75rem;
+    }
+
+    .comparison-table th {
+        font-size: 0.8rem;
+        padding: 10px 6px;
+    }
+
+    .table-description {
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+    }
+
+    /* Mobile Extra info */
+    .extra-info {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+    }
+
+    .extra-info h3 {
+        font-size: 1rem;
+    }
+
+    .extra-info h4 {
+        font-size: 0.9rem;
+    }
+
+    .extra-info ul {
+        margin: 3px 0 12px 15px;
+    }
+
+    .deprecated-methods {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Small mobile screens (320px and below) */
+@media (max-width: 320px) {
+    .container {
+        padding: 8px;
+    }
+
+    .header {
+        padding: 15px 8px;
+    }
+
+    .header h1 {
+        font-size: 1.4rem;
+    }
+
+    .header p {
+        font-size: 0.8rem;
+    }
+
+    .nav {
+        padding: 10px;
+    }
+
+    .nav a {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+
+    .section {
+        padding: 12px;
+    }
+
+    .section h2 {
+        font-size: 1.3rem;
+    }
+
+    .question {
+        padding: 10px;
+    }
+
+    .question h3 {
+        font-size: 0.95rem;
+    }
+
+    .code-block {
+        padding: 10px;
+        font-size: 0.75rem;
+    }
+
+    .example {
+        padding: 10px;
+    }
+
+    .tip {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+
+    .toggle-btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+
+    /* Extra small table styles */
+    .comparison-table {
+        min-width: 450px;
+        font-size: 0.7rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 6px 4px;
+        font-size: 0.7rem;
+    }
+
+    .comparison-table th {
+        font-size: 0.75rem;
+        padding: 8px 4px;
+    }
+}
+
+/* Landscape orientation adjustments for mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .header {
+        padding: 20px 15px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav a {
+        width: auto;
+        max-width: none;
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .header h1 {
+        font-weight: 300;
+    }
+
+    .section h2 {
+        font-weight: 400;
+    }
+}
+
+/* Print styles */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+
+    .header,
+    .nav,
+    .footer {
+        display: none;
+    }
+
+    .section {
+        background: white;
+        box-shadow: none;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        page-break-inside: avoid;
+    }
+
+    .comparison-table {
+        border: 1px solid #000;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        border: 1px solid #000;
+    }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .section:hover,
+    .question:hover,
+    .nav a:hover,
+    .toggle-btn:hover,
+    .social-link:hover {
+        transform: none;
+    }
+}
+
+/* Dark mode support */
+/* @media (prefers-color-scheme: dark) {
+    body {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        color: #e0e0e0;
+    }
+
+    .header,
+    .nav,
+    .section {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+    }
+
+    .question {
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .comparison-table {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .comparison-table tr:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+} */
