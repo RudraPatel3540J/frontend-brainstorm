@@ -2,6 +2,7 @@ import React from "react";
 import ProgressBar from "./components/ProgressBar";
 import Navigation from "./components/Navigation";
 import Section from "./components/Section";
+import Footer from "./components/Footer";
 import { interviewData } from "./data/interviewData";
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
       <ProgressBar />
       <div className="container">
         <div className="header">
-          <h1>🚀 JavaScript Interview Questions</h1>
+          <h1>🚀 Interview Questions</h1>
           <p>Complete Guide with Examples & Best Practices</p>
         </div>
 
@@ -23,6 +24,7 @@ function App() {
         <Section sectionData={interviewData.systemDesign} id="systemDesign" />
         <Section sectionData={interviewData.coding} id="coding" />
       </div>
+      <Footer />
     </>
   );
 }

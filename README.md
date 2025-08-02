@@ -1,4 +1,4 @@
-# JavaScript Interview Questions - React App
+# Interview Questions - React App
 
 A comprehensive React.js application featuring JavaScript interview questions, React concepts, Next.js, Redux, and coding challenges with **offline functionality**.
 
